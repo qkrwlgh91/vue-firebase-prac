@@ -7,11 +7,8 @@
       dark
     >
       <v-app-bar-nav-icon @click="drawer = !drawer"></v-app-bar-nav-icon>
-      <v-toolbar-title>page title</v-toolbar-title>
+      <SiteTitle :title="title" />
       <v-spacer></v-spacer>
-      <v-btn icon to="/about" >
-        <v-icon>mdi-magnify</v-icon>
-      </v-btn>
     </v-app-bar>
     <v-navigation-drawer app v-model="drawer">
       <v-list-item>
@@ -24,26 +21,29 @@
           </v-list-item-subtitle>
         </v-list-item-content>
       </v-list-item>
-
       <v-divider></v-divider>
+      <SiteMenu />
     </v-navigation-drawer>
     <v-content>
       <router-view />
     </v-content>
-    <!-- v-footer에서 app이 있을때는 바닦에 항상 보이고 app이 없으면 스크롤 가장 밑에 보인다 -->
-    <v-footer app color="primary" dark absolute>
-      <v-spacer />
-      <div>&copy; {{ new Date().getFullYear() }}</div>
-    </v-footer>
+    <SiteFooter :footer="footer" />
   </v-app>
 </template>
 
 <script>
+import SiteTitle from '@/views/site/title'
+import SiteFooter from '@/views/site/footer'
+import SiteMenu from '@/views/site/menu'
+
 export default {
+  components: { SiteTitle, SiteFooter, SiteMenu },
   name: 'App',
   data () {
     return {
-      drawer: false
+      drawer: false,
+      title: 'props title',
+      footer: 'props footer'
     }
   }
 
