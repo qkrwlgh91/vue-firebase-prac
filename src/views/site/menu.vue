@@ -20,6 +20,14 @@ export default {
         {
           title: 'about',
           to: '/about'
+        },
+        {
+          title: 'order-confirm',
+          to: '/order-confirm'
+        },
+        {
+          title: 'order-decide',
+          to: '/order-decide'
         }
       ]
     }
