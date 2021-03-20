@@ -28,6 +28,26 @@ export default {
         {
           title: 'order-decide',
           to: '/order-decide'
+        },
+        {
+          title: 'logistics-assignment-local-setting-popup',
+          to: '/logistics-assignment-local-setting-popup'
+        },
+        {
+          title: 'list-pdo-popup',
+          to: '/list-pdo-popup'
+        },
+        {
+          title: 'gift-setting',
+          to: '/gift-setting'
+        },
+        {
+          title: 'order-confirm-order-print-form-popup',
+          to: '/order-confirm-order-print-form-popup'
+        },
+        {
+          title: 'set-order-confirm-order-print-form-popup',
+          to: '/set-order-confirm-order-print-form-popup'
         }
       ]
     }
