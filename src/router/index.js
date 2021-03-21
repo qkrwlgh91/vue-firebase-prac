@@ -8,6 +8,7 @@ import ListPdoPopup from '../views/pages/order/list-pdo-popup.vue'
 import GiftSetting from '../views/pages/order/gift-setting.vue'
 import OrderPrintForm from '../views/pages/order/order-confirm/order-confirm-order-print-form-popup.vue'
 import SetOrderForm from '../views/pages/order/order-confirm/set-order-confirm-order-print-form-popup.vue'
+import MallOrderFormPopup from '../views/pages/basic-info/mall-auto-popup/mall-order-form-popup.vue'
 
 Vue.use(VueRouter)
 
@@ -59,6 +60,11 @@ const routes = [
     path: '/set-order-confirm-order-print-form-popup',
     name: 'set-order-confirm-order-print-form-popup',
     component: SetOrderForm
+  },
+  {
+    path: '/mall-order-form-popup',
+    name: 'mall-order-form-popup',
+    component: MallOrderFormPopup
   }
 ]
 

@@ -48,6 +48,10 @@ export default {
         {
           title: 'set-order-confirm-order-print-form-popup',
           to: '/set-order-confirm-order-print-form-popup'
+        },
+        {
+          title: 'mall-order-form-popup',
+          to: '/mall-order-form-popup'
         }
       ]
     }
