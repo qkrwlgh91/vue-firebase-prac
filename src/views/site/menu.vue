@@ -52,6 +52,10 @@ export default {
         {
           title: 'mall-order-form-popup',
           to: '/mall-order-form-popup'
+        },
+        {
+          title: 'excel_export',
+          to: '/excel_export'
         }
       ]
     }
